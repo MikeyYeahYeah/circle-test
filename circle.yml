@@ -11,3 +11,6 @@ dependencies:
       ; fi
   post:
     - sudo dpkg -i $HOME/.local/debs/python-pip*
+
+test:
+  - echo "Hello World"
