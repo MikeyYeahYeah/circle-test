@@ -1,0 +1,13 @@
+dependencies:
+  override:
+    - /bin/true
+  cache_directories:
+    - "~/.local"
+  pre:
+    - >-
+      if [[ ! -d "$HOME/.local/debs" ]]; then \
+        mkdir -p "$HOME/.local/debs"; cd "$HOME/.local/debs" \
+        && sudo apt-get download python-pip \
+      ; fi
+  post:
+    - sudo dpkg -i $HOME/.local/debs/python-pip*
