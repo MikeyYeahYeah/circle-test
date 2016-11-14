@@ -13,4 +13,5 @@ dependencies:
     - sudo dpkg -i $HOME/.local/debs/python-pip*
 
 test:
-  - echo "Hello World"
+  post:
+    - echo "Hello World"
