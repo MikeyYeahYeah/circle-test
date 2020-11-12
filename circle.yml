@@ -15,4 +15,4 @@ dependencies:
 test:
   post:
     - echo "Hello World!!"
-    - sleep 600
+    - sleep 240
